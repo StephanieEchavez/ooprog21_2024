@@ -1,1 +1,13 @@
 Chapter 1
+
+public class MovieQuoteInfor{
+  public static void main(String[] args) {
+    System.out.println("*                        *");
+    System.out.println("*                        *");
+    System.out.println("*                        *");
+    System.out.println("******  **********  ******");
+    System.out.println("*    *  *        *  *    *");
+    System.out.println("*    *  *        *  *    *");
+    System.out.println("*    *  *        *  *    *");
+  }
+}
