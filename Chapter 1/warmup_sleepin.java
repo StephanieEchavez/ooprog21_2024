@@ -1,5 +1,5 @@
 public class SleepIn {
-    public static boolean sleepIn(boolean weekday, boolean vacation) {
+    public static boolean SleepIn(boolean weekday, boolean vacation) {
         return !weekday || vacation;
     }
 
