@@ -18,7 +18,7 @@ public class Billing {
       
    public static void main(String[] args) {
       System.out.println("The total price for the bill is: " + compBill(23.2));
-      System.out.println("The total price for the bill is: " + compBill(23.2, 2));
-      System.out.println("The total price for the bill is: " + compBill(23.2, 3, 10));
+      System.out.println("The total price for the bill is: " + compBill(24.2, 2));
+      System.out.println("The total price for the bill is: " + compBill(38.4518, 2, 6));
    } 
 }
