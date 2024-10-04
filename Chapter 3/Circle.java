@@ -1,51 +1,46 @@
-public class Circle 
-{
-   double radius, diameter, area; 
- 
-   public Circle(){
-      this.radius = 1.0;
-      this.diameter = 2 * radius;
-      this.area = 3.14159 * radius * radius;
-   }
-   public void setRad (double rad){
-      this.radius = rad;
-      this.diameter = 2 * radius;
-      this.area = 3.14159 * radius * radius;
-   }
-   public double getRad(){
-      return this.radius;
-   }
-   public  double getDia(){
-      return this.diameter;
-   }
-   public  double getArea(){
-      return this.area;
-   }
-}
+public class Circle {
+    private static double radius;
+    private static double diameter;
+    private static double area;
 
-import java.util.Scanner;
-public class TestCircle {
-   public static void main(String[] args){
-   Scanner s = new Scanner(System.in);
-   Circle a = new Circle();
-   Circle b = new Circle();
-   Circle c = new Circle();
-   a.setRadius(3);
-   b.setRadius(20);
-        System.out.println("Radius of the first circle: " + a.getRads());
-        System.out.println("Diameter of the first circle: " + a.getDiam());
+    public Circle() {
+        radius = 1;
+        diameter = 2 * radius;
+        area = Math.PI * Math.pow(radius, 2);
+    }
+
+    public static void setRad(double rad) {
+        radius = rad;
+        diameter = 2 * radius;
+        area = Math.PI * Math.pow(radius, 2);
+    }
+
+    public static double getRad() {
+        return radius;
+    }
+
+    public static double getDia() {
+        return diameter;
+    }
+
+    public static double getArea() {
+        return area;
+    }
+
+    public static void main(String[] args) {
+
+        Circle a = new Circle();
+        Circle b = new Circle();
+        Circle c = new Circle();
+
+        a.setRad(3);
+        System.out.println("Radius of the first circle: " + a.getRad());
+        System.out.println("Diameter of the first circle: " + a.getDia());
         System.out.println("Area of the first circle: " + a.getArea());
 
-        System.out.println("\nRadius of the second circle: " + b.getRad());
-        System.out.println("Diameter of the second circle: " + b.getDiam());
+        b.setRad(20);
+        System.out.println("Radius of the second circle: " + b.getRad());
+        System.out.println("Diameter of the second circle: " + b.getDia());
         System.out.println("Area of the second circle: " + b.getArea());
-        
-        System.out.print("\nInput radius for third circle: ");
-        double usrInput = s.nextDouble();
-        c.setRadius(usrInput);
-        System.out.println("\nRadius of the second circle: " + c.getRad());
-        System.out.println("Diameter of the second circle: " + c.getDiam());
-        System.out.println("Area of the second circle: " + c.getArea());
-
-           }
+    }
 }
