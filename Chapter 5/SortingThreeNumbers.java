@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class SortingThreeNumbers {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
-        int num1 = scanner.nextInt();
+        int num1 = s.nextInt();
 
         System.out.print("Enter the second number: ");
-        int num2 = scanner.nextInt();
+        int num2 = s.nextInt();
 
         System.out.print("Enter the third number: ");
-        int num3 = scanner.nextInt();
+        int num3 = s.nextInt();
 
         if (num1 <= num2 && num2 <= num3) {
             System.out.println("Ascending order: " + num1 + " " + num2 + " " + num3);
@@ -41,6 +41,6 @@ public class SortingThreeNumbers {
             System.out.println("Descending order: " + num3 + " " + num2 + " " + num1);
         }
 
-        scanner.close();
+        s.close();
     }
 }
